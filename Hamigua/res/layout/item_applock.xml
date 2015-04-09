@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+  <ImageView android:id="@+id/iv_applock_icon" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/ic_launcher" /> 
+  <TextView android:textSize="18sp" android:layout_centerVertical="true" android:id="@+id/tv_applock_name" android:layout_toRightOf="@id/iv_applock_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="程序名称" /> 
+  <ImageView android:layout_alignParentRight="true" android:id="@+id/iv_applock_change" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/list_button_lock_pressed" /> 
+  </RelativeLayout>

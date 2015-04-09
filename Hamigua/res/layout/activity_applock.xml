@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent" 
+    android:orientation="vertical">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_horizontal" android:orientation="horizontal">
+  <TextView android:id="@+id/tv_unlock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/lefttab_selecter" android:gravity="center" android:text="未加锁" android:textColor="#ffffff" /> 
+  <TextView android:id="@+id/tv_locked" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/righttab_selecter" android:gravity="center" android:text="已加锁" android:textColor="#ffffff" /> 
+  </LinearLayout>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+<LinearLayout android:id="@+id/ll_unlock" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+  <TextView android:id="@+id/tv_unlock_count" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="未加锁应用xx个" /> 
+  <ListView android:id="@+id/lv_unlock" android:layout_width="fill_parent" android:layout_height="fill_parent" /> 
+  </LinearLayout>
+ <LinearLayout android:visibility="gone" android:id="@+id/ll_locked" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+  <TextView android:id="@+id/tv_locked_count" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="已加锁应用xx个" /> 
+  <ListView android:id="@+id/lv_locked" android:layout_width="fill_parent" android:layout_height="fill_parent" /> 
+  </LinearLayout>
+  </FrameLayout>
+  </LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Hamigua</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_app_manager">AppManagerActivity</string>
+    <string name="title_activity_enter_hmg">EnterHMGActivity</string>
+
+</resources>

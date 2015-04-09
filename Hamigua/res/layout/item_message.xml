@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    
+  >
+    
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_setting_intercept"
+     	android:layout_marginLeft="10dp"
+     	android:id="@+id/icon"
+        />
+	<Button 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/common_toggle_off"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="10dp"
+	    />
+
+	<TextView
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerVertical="true"
+	    android:layout_toRightOf="@+id/icon"
+	    android:text="启用隐私通知栏"
+	    android:textSize="16sp" 
+	    android:layout_marginLeft="10dp"/>
+
+</RelativeLayout>

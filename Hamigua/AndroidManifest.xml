@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hamigua"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="4"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+	<uses-permission android:name="android.permission.GET_TASKS"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.hamigua.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.hamigua.PwdSetting" >
+        </activity>
+        <activity
+            android:name="com.hamigua.AppManagerActivity"
+            android:label="@string/title_activity_app_manager" >
+        </activity>
+        <activity
+            android:name="com.hamigua.EnterHMGActivity"
+            android:label="@string/title_activity_enter_hmg" 
+            android:launchMode="singleInstance">
+        </activity>
+        <service android:name="com.hamigua.service.PassWordService"></service>
+    </application>
+
+</manifest>

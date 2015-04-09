@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+   
+   >
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="哈密瓜设置" 
+        android:textSize="24sp"/>
+ <ScrollView 
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+   <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+    android:orientation="vertical" >
+ 
+	<include layout="@layout/item_start"
+	    />
+	  <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/line"
+        />
+	<include layout="@layout/item_hideapp"
+	  />
+	 <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line"
+        />
+	<include layout="@layout/item_handler"/>
+		  <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/line"
+        />
+	<include layout="@layout/item_message"/>
+	<ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line"
+        />
+	<include layout="@layout/item_contentste"/>
+	<ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line"
+        />
+	<include layout="@layout/item_messageapp"/>
+		  <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/line"
+        />
+	<include layout="@layout/item_home"/>
+		  <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/line"
+        />
+	<include layout="@layout/item_advices"/>
+	<ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line"
+        />
+	<include layout="@layout/item_help"/>
+	<ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line"
+        />
+	<include layout="@layout/item_about"/>
+	</LinearLayout>
+	</ScrollView>
+</LinearLayout>
